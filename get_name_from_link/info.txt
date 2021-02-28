@@ -1,0 +1,8 @@
+This function does not work with files.
+The function's task is to find a name in an address.
+
+whatsfilename just splits the string using a delimiter.
+
+Each new element overwrites the previous one.
+
+As a result of the operation, the last element is the file name.
