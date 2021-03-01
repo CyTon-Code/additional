@@ -1,7 +1,8 @@
-def run_scripts():
+def run_scripts(path: list):
     """
-    file: *.a - этот блок отвечает за исполнение скриптов при старте.
+        file: *.a - этот блок отвечает за исполнение скриптов при старте.
     """
+
     script = False
 
     if script:

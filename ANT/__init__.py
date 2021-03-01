@@ -6,7 +6,7 @@ class ANT:
         self.mode_arguments = arguments  # Можно читать аргументы как команду? как правило в ней запускают модуль arg ()
         self.mode_scripts = scripts  # Можно запускать скриптовые файлы типов .a .py?
 
-        self.ant_path = []
+        self.path = []
         self.args = []
 
     def set_console(self, console):

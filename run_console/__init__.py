@@ -1,10 +1,12 @@
-def run_console():
+def run_console(stop: str = "."):
     """
-    Этот блок предназначен для прямого взаимодействия с пользователем.
+        Этот блок предназначен для прямого взаимодействия с пользователем.
     """
+
     console = True
+
     while console:
         command = input()
 
-        if command[0] == ".":
+        if command[0] == stop:
             console = False
