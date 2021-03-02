@@ -9,6 +9,8 @@ class ANT:
         self.path = []
         self.args = []
 
+        self.echo = ""  # @ECHO -set
+
     def set_console(self, console):
         self.mode_console = console
 
