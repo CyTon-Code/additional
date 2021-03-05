@@ -1,13 +1,27 @@
+"""
+    The module works only through import.
+    Via os.system or return (RUN) - doesn't work.
+"""
+
+if __name__ == "__main__":  # If not imported, I exit is the module:
+    print("I am is Module!!! Bye Bye!!!")
+    exit()  # Answer: I'm leaving, I'm a module.
+
+
 class ANT:
-    def __init__(self, console=True, arguments=True, scripts=True):
+    def __init__(self, console: bool = True, arguments: bool = True,
+                 scripts: bool = True):
         self.home = __file__  # Папка расположения.
 
         self.mode_console = console  # Можно запускать интерактивную консоль?
-        self.mode_arguments = arguments  # Можно читать аргументы как команду? как правило в ней запускают модуль arg ()
-        self.mode_scripts = scripts  # Можно запускать скриптовые файлы типов .a .py?
+        self.mode_arguments = arguments  # Можно читать аргументы как команду?
+        # как правило в ней запускают модуль arg ()
+        self.mode_scripts = scripts  # Можно запускать скриптовые файлы типов:
+        # .a .py?
 
-        self.path = []
-        self.args = []
+        self.path = []  # ссылки на скрипты. Как правило одноразовые.
+        # Используются обычно при старте.
+        self.args = []  # аргументы которые ANT получает при запуске.
 
         self.echo = ""  # @ECHO -set
 

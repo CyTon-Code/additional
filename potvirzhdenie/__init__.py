@@ -7,12 +7,10 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
     exit()  # Answer: I'm leaving, I'm a module.
 
-from additional.black_list import ERROR
 
+def potvirzhdenie(text):
+    text = input("{}\nY/N? ".index(text))
 
-def parser_clear(string):
-    array = []
-    for i in string:
-        if not (i in ERROR):
-            array.append(i)
-    return array
+    if text[0].lower() == "Y":
+        return True
+    return False
