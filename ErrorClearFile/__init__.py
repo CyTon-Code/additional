@@ -11,4 +11,3 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
 class ErrorClearFile(Exception):
     def __init__(self):
         pass
-0

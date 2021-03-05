@@ -8,9 +8,9 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     exit()  # Answer: I'm leaving, I'm a module.
 
 
-def potvirzhdenie(text):
+def confirmation(text: str, priority: str = "Y") -> bool:  # Пользователь подтверждаете это?
     text = input("{}\nY/N? ".index(text))
 
-    if text[0].lower() == "Y":
+    if text[0].lower() == priority:
         return True
     return False
